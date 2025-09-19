@@ -27,9 +27,9 @@ while true; do
     fi
 done
 
+# Display the access link
+echo -e "${MAGENTA}Server is running at: http://0.0.0.0:$PORT/${RESET}"
+
 # Start the PHP server
 echo -e "${MAGENTA}Starting PHP server on port $PORT...${RESET}"
 php -S 0.0.0.0:$PORT -t "$FOLDER"
-
-# Display the access link
-echo -e "${MAGENTA}Server is running at: http://0.0.0.0:$PORT/${RESET}"
